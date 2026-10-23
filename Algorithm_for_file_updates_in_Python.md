@@ -66,3 +66,25 @@ with open(import_file, "w") as file:
 
 ## Summary
 For the company, I built a Python algorithm to automate identifying and removing IP addresses from the allow list that should no longer have network access. To accomplish this, the script reads the file's data into a string, converts it into a list so it can be edited, and then converts the revised list back into a string to overwrite the original file.
+
+```python
+import_file = "allow_list.txt"
+
+with open(import_file, "r") as file:
+    ip_addresses = file.read()
+
+ip_addresses = ip_addresses.split()
+
+for element in ip_addresses:
+    print(element)
+    if element in remove_list:
+        ip_addresses.remove(element)
+    print(ip_addresses)
+
+ip_addresses = " ".join(ip_addresses)
+
+# Build `with` statement to rewrite the original file
+with open(import_file, "w") as file:
+  # Rewrite the file, replacing its contents with `ip_addresses`
+  file.write(ip_addresses)
+```
