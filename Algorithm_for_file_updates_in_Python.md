@@ -8,8 +8,8 @@
 - **Languages & Libraries:** Python (file I/O, string manipulation, list methods)
 - **Concepts & Operations:** Access control lists (ACLs), file parsing, conditional filtering, automated file rewriting and overwriting
 
-### Executive Summary
-[PLACEHOLDER: We will write a 3-sentence summary of what the script does for management.]
+## Executive Summary
+Network security operations require efficient, automated mechanisms to manage access control lists and prevent unauthorized access. This project implements a Python-based automation script to parse, filter, and update enterprise IP allow lists without manual intervention. By streamlining file management and access revocation, the solution minimizes human error and strengthens organizational security posture.
 
 ### Project Description
 In this simulated scenario, a company manages its network access using a simple text file of approved IP addresses. To automate their security updates, I implemented a Python script that opens the file, removes any restricted IP addresses, and overwrites the document with the revised allow-list.
