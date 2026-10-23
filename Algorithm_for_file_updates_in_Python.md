@@ -9,21 +9,40 @@
 [PLACEHOLDER: We will write a 3-sentence summary of what the script does for management.]
 
 ### Project Description
-At the company traffic is controlled with a list of allowed ip addresses.[cite: 1] An algorithm must be made to automate identifying ip addresses that shouldn’t have access too, and updates the list of allowed ip addresses.[cite: 1]
+In this simulated scenario, a company manages its network access using a simple text file of approved IP addresses. To automate their security updates, I implemented a Python script that opens the file, removes any restricted IP addresses, and overwrites the document with the revised allow-list.
 
 ### Python Algorithm Breakdown
 
 #### 1. Open the file that contains the allow list
-To open the file “allow_list.txt” use with open(import_file, "r") as file: but first must be imported and labeled by writing import_file = “allow_list.txt”[cite: 1] The with statement is used in conjunction with the .open() function to open the file in read mode.[cite: 1] With closes the file after the with statement.[cite: 1] .open( import_file,”r”) has two functions separated by a comma.[cite: 1] The first specifies which file to open and the second “r” specifies the action which in this case is reading.[cite: 1] The as variable file[cite: 1]
+To access the allow list, the file name must first be imported and assigned to a variable, which I labeled as `import_file`. I then used a `with` statement in conjunction with the `.open()` function to open the file in read mode, specified by the `"r"` argument. Using the `with` statement is essential here because it automatically closes the file after the block of code executes, preventing resource leaks.
+
+```python
+import_file = "allow_list.txt"
+with open(import_file, "r") as file:
+```
 
 #### 2. Read the file contents
-To read the file,  .read() must be used to convert the to the string.[cite: 1] Since the open function included the argument I can call the read function in.[cite: 1] Read is applied to the file variable that is then labeled and stored as “ip_addresses”[cite: 1]
+To read the file's contents, the `.read()` method must be used to convert the data into a string. This read function is applied to the open `file` variable, and the resulting string of approved IP addresses is then labeled and stored in a new variable called `ip_addresses`.
+
+```python
+ip_addresses = file.read()
+```
 
 #### 3. Convert the string into a list
-Now the contents of the file need to be converted into a string.[cite: 1] Now .split() will be used in order to convert the string into a list.[cite: 1] Defining ip_addresses = ip_addresses.split() tells the machine that this second variable is the same as the first except should be put in a list format split on the white space because of .split()[cite: 1]
+To manipulate the data and remove specific IPs, the contents of the file need to be converted from a string into a list format. I used the `.split()` method, which separates the string based on whitespace and organizes the data into a list. This redefines the `ip_addresses` variable as a list, allowing the algorithm to isolate and evaluate each individual IP address.
 
-#### 4. Iterate through the remove list
-To iterate through the remove list i need to use for element in ip_addresses: print(element)[cite: 1] This statement tells the system that for every element in the list called ip_addresses display every element.[cite: 1] The for loop allows this to continue looping until complete.[cite: 1]
+```python
+ip_addresses = ip_addresses.split()
+```
+
+#### 4. Iterate through and remove restricted IP addresses
+To identify IP addresses that should no longer have access, I used a `for` loop to iterate through every element in the `ip_addresses` list. Inside this loop, I added an `if` statement to check if the current element is also found in the `remove_list`. If a match is found, the `.remove()` function is applied to delete that specific element from the `ip_addresses` list. 
+
+```python
+for element in ip_addresses:
+    if element in remove_list:
+        ip_addresses.remove(element)
+```
 
 #### 5. Remove IP addresses that are on the remove list
 At this point we need to remove IP addresses that are also on the list called remove_list[cite: 1] To do that we need to add if element in remove_list: ip_addresses.remove(element) print(ip_addresses)[cite: 1] Now if an element from remove list is found in ip_addresses then the element of the list will be removed and then ip_addresses will be printed[cite: 1]
