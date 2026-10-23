@@ -64,5 +64,5 @@ with open(import_file, "w") as file:
   file.write(ip_addresses)
 ```
 
-### Summary
-For a “company” I created an algorithm to identify and remove elements or in this case ip addresses that are on the allow list that should no longer have access.[cite: 1] To accomplish this the algorithm needed to convert a string to a stored list to edit, be converted back into a string and written over with a revised list.[cite: 1]
+## Summary
+For the company, I built a Python algorithm to automate identifying and removing IP addresses from the allow list that should no longer have network access. To accomplish this, the script reads the file's data into a string, converts it into a list so it can be edited, and then converts the revised list back into a string to overwrite the original file.
