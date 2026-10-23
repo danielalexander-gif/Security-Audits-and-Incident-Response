@@ -1,9 +1,12 @@
 # Algorithm_for_file_updates_in_Python.md
 
-**Context:** [PLACEHOLDER: We will write the simulation disclaimer here so recruiters know it's a lab environment.]
+**Context:** This project was developed within a simulated lab environment for practical hands-on security training. Any references to company data or networks are used solely for demonstration and learning purposes.
 
-**Objective:** [PLACEHOLDER: We will write a 1-sentence goal for the Python script.]
-**Skills & Tools Demonstrated:** [PLACEHOLDER: We will list Python, Automation, etc.]
+**Objective:** This script automates network access control by parsing, filtering, and updating an IP allow list. Its goal is to streamline routine security maintenance and ensure restricted users efficiently lose network access.
+
+## Skills and Tools Demonstrated
+- **Languages & Libraries:** Python (file I/O, string manipulation, list methods)
+- **Concepts & Operations:** Access control lists (ACLs), file parsing, conditional filtering, automated file rewriting and overwriting
 
 ### Executive Summary
 [PLACEHOLDER: We will write a 3-sentence summary of what the script does for management.]
