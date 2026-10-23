@@ -65,7 +65,7 @@ with open(import_file, "w") as file:
 ```
 
 ## Summary
-For the company, I built a Python algorithm to automate identifying and removing IP addresses from the allow list that should no longer have network access. To accomplish this, the script reads the file's data into a string, converts it into a list so it can be edited, and then converts the revised list back into a string to overwrite the original file.
+In the scenario for a company I implemented a Python algorithm to automate identifying and removing IP addresses from the allow list that should no longer have network access. To accomplish this, the script reads the file's data into a string, converts it into a list so it can be edited, and then converts the revised list back into a string to overwrite the original file.
 
 ```python
 import_file = "allow_list.txt"
