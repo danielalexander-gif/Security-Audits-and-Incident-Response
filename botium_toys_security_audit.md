@@ -3,10 +3,10 @@
 > **Note:** This risk assessment and compliance audit was developed within a simulated lab environment for practical hands-on security training. Any references to company data, systems, or networks are used solely for demonstration and learning purposes.
 
 ## Executive Summary
-Botium Toys currently operates with an elevated risk profile (scored 8 out of 10) due to inadequate asset management and the absence of critical security controls[cite: 2]. This audit assesses the organization's existing infrastructure against industry standards to identify gaps in data protection, access management, and system resilience. By completing a comprehensive controls and compliance checklist, this report provides a strategic roadmap to align Botium Toys with PCI DSS, GDPR, and SOC frameworks.
+Botium Toys currently operates with an elevated risk profile (scored 8 out of 10) due to inadequate asset management and the absence of critical security controls. This audit assesses the organization's existing infrastructure against industry standards to identify gaps in data protection, access management, and system resilience. By completing a comprehensive controls and compliance checklist, this report provides a strategic roadmap to align Botium Toys with PCI DSS, GDPR, and SOC frameworks.
 
 ## Objective
-The objective of this project is to evaluate Botium Toys' current security posture against established frameworks and provide actionable recommendations to mitigate operational risks and achieve regulatory compliance[cite: 2, 3].
+The objective of this project is to evaluate Botium Toys' current security posture against established frameworks and provide actionable recommendations to mitigate operational risks and achieve regulatory compliance.
 
 ## Controls Assessment Checklist
 *Evaluation of existing controls based on the provided risk assessment data.*
@@ -58,8 +58,8 @@ The objective of this project is to evaluate Botium Toys' current security postu
 ## Recommendations
 To reduce the elevated risk score and align with industry compliance frameworks (PCI DSS, GDPR, SOC), Botium Toys must prioritize the following initiatives:
 
-*   **Implement Identity and Access Management (IAM):** Immediately enforce the principle of least privilege and separation of duties[cite: 2]. Deploy a centralized password management system and update the organizational password policy to enforce complexity and length requirements[cite: 2].
-*   **Secure Sensitive Data:** Implement encryption protocols for data at rest and in transit to protect customers' credit card information, PII, and SPII, bringing the organization into compliance with PCI DSS and GDPR[cite: 2, 3].
-*   **Establish Asset Management and Classification:** Dedicate resources to inventory, classify, and track all IT assets (both physical and digital) to understand business continuity impacts and eliminate blind spots[cite: 2].
-*   **Deploy Business Continuity and Disaster Recovery (BCDR) Controls:** Establish a formal disaster recovery plan and initiate automated, routine backups of all critical company data[cite: 2]. 
-*   **Enhance Network Security Monitoring:** Install and configure an Intrusion Detection System (IDS) to actively monitor internal network traffic and complement the existing firewall and antivirus solutions[cite: 2, 3].
+*   **Implement Identity and Access Management (IAM):** Immediately enforce the principle of least privilege and separation of duties. Deploy a centralized password management system and update the organizational password policy to enforce complexity and length requirements.
+*   **Secure Sensitive Data:** Implement encryption protocols for data at rest and in transit to protect customers' credit card information, PII, and SPII, bringing the organization into compliance with PCI DSS and GDPR.
+*   **Establish Asset Management and Classification:** Dedicate resources to inventory, classify, and track all IT assets (both physical and digital) to understand business continuity impacts and eliminate blind spots.
+*   **Deploy Business Continuity and Disaster Recovery (BCDR) Controls:** Establish a formal disaster recovery plan and initiate automated, routine backups of all critical company data. 
+*   **Enhance Network Security Monitoring:** Install and configure an Intrusion Detection System (IDS) to actively monitor internal network traffic and complement the existing firewall and antivirus solutions.
