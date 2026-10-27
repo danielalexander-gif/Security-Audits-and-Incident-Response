@@ -56,3 +56,26 @@ WHERE department = 'Marketing' AND office LIKE 'East%';
 ```
 This selects all employees in the Marketing department who are located in the East building. The `department = 'Marketing'` condition filters the dataset for Marketing employees, while the `AND` operator combined with `office LIKE 'East%'` further narrows the results to include only those whose office location begins with `"East"`.
 
+### 5. Retrieve employees in Finance or Sales
+To gather device data for upcoming system updates across the Sales and Finance departments, I needed to retrieve all employee records for those specific groups. 
+
+```sql
+SELECT * 
+FROM employees
+WHERE department = 'Sales' OR department = 'Finance';
+```
+This query filters the dataset to return listings for both departments. By linking the two department conditions with the `OR` operator, the query successfully outputs all employee records belonging to either Sales or Finance.
+
+
+### 6. Retrieve all employees not in IT
+Because the Information Technology department had already received the latest system update, I needed to retrieve machine data for employees in all other departments. 
+
+```sql
+SELECT *
+FROM employees
+WHERE NOT department = 'Information Technology';
+```
+This query selects all records from the `employees` table while excluding the IT department. By applying the `NOT` operator to the `department = 'Information Technology'` condition, the dataset is filtered to return only the employee records required for the remaining updates.
+
+## Summary
+In this project, I investigated suspicious events by querying failed login attempts and narrowing down the exact dates and locations they originated from. I also prepared the environment for targeted system updates by filtering employee records based on specific department names and office locations, ensuring we pulled the exact data needed for deployment.
